@@ -47,6 +47,7 @@ class TrainingArguments(BaseModel):
     epoch: int
     batch_size: int
     model_storage_dir: str
+    best_state_dict:Optional[Dict]
     addtional_model_config: Optional[Dict]
     early_stop_count: Optional[int] = 3
 
